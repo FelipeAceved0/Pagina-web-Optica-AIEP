@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Checkbox Example</title>
+  <script>
+    function mostrarPrecio() {
+      var checkbox = document.getElementById("checkbox");
+      var mensaje = document.getElementById("mensaje");
+      
+      if (checkbox.checked) {
+        mensaje.textContent = "El producto es gratuito.";
+      } else {
+        mensaje.textContent = "El precio es de $7000.";
+      }
+    }
+  </script>
+</head>
+<body>
+  <h1>Producto</h1>
+  <input type="checkbox" id="checkbox" onchange="mostrarPrecio()">
+  <label for="checkbox">Seleccionar si es gratuito</label>
+  <p id="mensaje">El precio es de $7000.</p>
+</body>
+</html>

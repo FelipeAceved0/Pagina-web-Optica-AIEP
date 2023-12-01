@@ -1,0 +1,141 @@
+<html>
+
+<head>
+
+    <title>VisionOptica</title>
+    <link rel="stylesheet" href="miestilo.css">
+    <script src="https://kit.fontawesome.com/ae4f7efdcd.js" crossorigin="anonymous"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+    <div class="interior">
+        <header>
+
+            <a href="" class="logo"><img src="images\logo2.png"></a>
+
+    </div>
+    </header>
+    <nav class="navegacion">
+        <ul>
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="reservadehora.html">reserva de horas</a></li>
+            <li><a href="Productos.html">Productos</a></li>
+            <li><a href="sustentabilidad.html">Sustentabilidad</a></li>
+            <li><a href="sucursale.html">Sucursales</a></li>
+            <li><a href="Contacto.html">Contactanos</a></li>
+        </ul>
+    </nav>
+    
+    <main class="main">
+        <section class="section2">
+            <h1>Lentes de Contacto</h1>
+
+            <p>Compra una unidad por solo $30.500</p>
+            <img src="images\Caja_air_optix.png" alt="caja" class="caja"><br><br><br><br>
+            
+        
+            <form class="centrar"> 
+                
+                <h1>Ingrese la Graduacion:</h1>
+                <label for="poder">Poder (Esfera):</label>
+                <select name="poder" id="poder">
+                  <option value="-2.00">-2.00</option>
+                  <option value="-1.75">-1.75</option>
+                  <option value="-1.50">-1.50</option>
+                  <option value="-1.25">-1.25</option>
+                  <option value="-1.00">-1.00</option>
+                  <option value="-0.75">-0.75</option>
+                  <option value="-0.50">-0.50</option>
+                  <option value="-0.25">-0.25</option>
+                  <option value="+0.25">+0.25</option>
+                  <option value="+0.50">+0.50</option>
+                  <option value="+0.75">+0.75</option>
+                  <option value="+1.00">+1.00</option>
+                  <option value="+1.25">+1.25</option>
+                  <option value="+1.50">+1.50</option>
+                  <option value="+1.75">+1.75</option>
+                </select><br><br>
+                <label for="cantidad">Ingrese la cantidad:  </label>
+                <select id="cantidad">
+                  <option value="1">1</option>
+                  <option value="2">2</option>
+                  <option value="3">3</option>
+                  <option value="4">4</option>
+                  <option value="5">5</option>
+                  <option value="6">6</option>
+                  <option value="7">7</option>
+                  <option value="8">8</option>
+                  <option value="9">9</option>
+                  <option value="10">10</option>
+                </select><br><br>
+                <div class="resultado">
+                <p id="resultado"></p>
+                </div>
+                <button onclick="calcularPrecio()">Calcular Precio</button><br><br>
+
+                <input type="submit" name="submit" value="COMPRAR"/>
+            
+            </form>
+           
+              <script>
+                function calcularPrecio() {
+                    event.preventDefault()
+            
+                  
+                  var cantidad = document.getElementById("cantidad").value;
+            
+                  
+                  var precios= 30500
+            
+                  
+                  var precioTotal = precios * cantidad;
+            
+                   
+                  document.getElementById("resultado").textContent =precioTotal+" +IVA";
+                }
+              </script>
+             
+        </section>
+      
+    </main><br>
+    <footer class="footer">
+        <div class="grupo1">
+            
+                <div class="box">
+                    <h3>Síguenos</h3>
+                    <div class="red-social">
+                        <h3><a href="#" class="fa fa-whatsapp"></a></h3>
+                        <h3><a href="#" class="fa fa-facebook"></a></h3>
+                        <h3><a href="#" class="fa fa-instagram"></a></h3>
+                        <h3><a href="#" class="fa fa-twitter"></a></h3>
+                    </div>
+                </div>
+                <div class="box">
+                    <h3>Servicios</h3>
+                    <p>Visitas a domicilio</p>
+                    <p>Convenios con empresas</p>
+                    <p>Garantia de 3 meses</p>
+                    <p>Operativos oftalmológicos</p>
+                </div>
+                <div class="box">
+                    <h3>Contactos</h3>
+                    <p><a href="#" class="fa fa-whatsapp"></a>+569 72406659 Av. Las Parcelas 5722</p>
+                    <p><a href="#" class="fa fa-whatsapp"></a>+569 97082823 Ureta Cox 497</p>
+                    <p><a href="#" class="fa fa-whatsapp"></a>+569 66708261 Av. Departamental 961-975</p>
+                    <p><a href="#" class="fa fa-whatsapp"></a>+569 32433547 La florida</p>
+                </div>
+
+
+            
+
+        </div>
+
+        <div class="grupo2">
+            <small>&copy; 2023 <b>VisionOptima</b> - Todos los Derechos Reservados.</small>
+
+
+    </footer>
+</body>
+
+</html> 

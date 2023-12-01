@@ -1,0 +1,149 @@
+<html>
+
+<head>
+
+    <title>VisionOptica</title>
+    <link rel="stylesheet" href="miestilo.css">
+    <script src="https://kit.fontawesome.com/ae4f7efdcd.js" crossorigin="anonymous"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBwbs9JoAYFt4XqT1TFw8Gsamv3FvXjbC0"></script>
+
+</head>
+
+<body>
+    <div class="interior">
+        <header>
+
+            <a href="" class="logo"><img src="C:\Users\felip\Desktop\proyecto\images\logo2.png"></a>
+
+    </div>
+    </header>
+    <nav class="navegacion">
+        <ul>
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="reservadehora.html">reserva de horas</a></li>
+            <li><a href="Productos.html">Productos</a></li>
+            <li><a href="sustentabilidad.html">Sustentabilidad</a></li>
+            <li><a href="sucursale.html">Sucursales</a></li>
+            <li><a href="Contacto.html">Contactanos</a></li>
+        </ul>
+    </nav>
+    <main class="mainSUC">
+        <section class="section">
+
+            <div id = "titleSUC"> Nuestras Sucursales</div>
+
+            <div class="txtSCLS">
+                <p> <strong> Sucursal La florida: Calle Verde 12588</p> 
+                <p>Horario: 08:00-19:00</p>
+                <p>Telefono: <a href="#" class="fa fa-whatsapp"></a> +569 32433547 </strong> </p>
+                <br>
+                <div id="mapa1" class="mapa"></div>
+
+            </div>
+            <br>
+
+        
+
+            <div class="txtSCLS">
+                <p> <strong> Sucursal Las Parcelas: Av.Las Parcelas 5722</p>
+                <p>Horario: 08:00-19:00</p>
+                <p>Telefono: <a href="#" class="fa fa-whatsapp"></a> +569 72406659 </strong> </p>
+                <br>
+                <div id="mapa2" class="mapa"></div>
+            </div>
+
+            <br>
+
+        
+            <div class="txtSCLS">
+                <p> <strong> Sucursal Ureta Cox: Ureta Cox 497</p>
+                <p>Horario: 08:00-19:00</p>
+                <p>Telefono: <a href="#" class="fa fa-whatsapp"></a> +569 97082823 </strong> </p>
+                <br>
+                <div id="mapa3" class="mapa"></div>
+            </div>
+
+          
+            </div>
+           <br>
+            <div class="txtSCLS">
+                <p> <strong>Sucursal Departamental: Av. Departamental 963 </p>
+                <p>Horario: 08:00-19:00</p>
+                <p>Telefono: <a href="#" class="fa fa-whatsapp"></a> +569 66708261 </strong> </p>
+                <br>
+                <div id="mapa4" class="mapa"></div>
+            </div>
+
+
+
+        </section>
+        
+    </main>
+    
+    <footer class="footer">
+        <div class="grupo1">
+            
+                <div class="box">
+                    <h3>Síguenos</h3>
+                    <div class="red-social">
+                        <a href="#" class="fa fa-whatsapp"></a>
+                        <a href="#" class="fa fa-facebook"></a>
+                        <a href="#" class="fa fa-instagram"></a>
+                        <a href="#" class="fa fa-twitter"></a>
+                    </div>
+                </div>
+                <div class="box">
+                    <h3>Servicios</h3>
+                    <p>Visitas a domicilio</p>
+                    <p>Convenios con empresas</p>
+                    <p>Garantia de 3 meses</p>
+                    <p>Operativos oftalmológicos</p>
+                </div>
+                
+                <div class="box">
+                    <h3>Contactos</h3>
+                    <p><a href="#" class="fa fa-whatsapp"></a>+569 72406659 Av. Las Parcelas 5722</p>
+                    <p><a href="#" class="fa fa-whatsapp"></a>+569 97082823 Ureta Cox 497</p>
+                    <p><a href="#" class="fa fa-whatsapp"></a>+569 66708261 Av. Departamental 963</p>
+                    <p><a href="#" class="fa fa-whatsapp"></a>+569 32433547 La florida</p>
+                </div>
+
+
+            
+
+        </div>
+
+        <div class="grupo2">
+            <small>&copy; 2023 <b>VisionOptima</b> - Todos los Derechos Reservados.</small>
+    </footer>
+    
+<script>
+    function initMap(contenedor, ubicacion) {
+  var mapa = new google.maps.Map(document.getElementById(contenedor), {
+    center: ubicacion,
+    zoom: 12
+  });
+
+  var marcador = new google.maps.Marker({
+    position: ubicacion,
+    map: mapa,
+    title: 'Ubicación'
+  });
+}
+
+window.addEventListener('load', function() {
+  initMap('mapa1', {lat: -33.569445, lng: -70.589857});
+  initMap('mapa2', {lat: -33.463712, lng: -70.712632});
+  initMap('mapa3', {lat: -33.501053, lng: -70.638862});
+  initMap('mapa4', {lat: -33.504056, lng: -70.652422});
+});
+
+</script>
+
+
+    
+</body>
+
+</html>
